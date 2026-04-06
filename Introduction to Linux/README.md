@@ -17,3 +17,9 @@ However..
 
 ## 🧠What is a Kernel?
 <img src="https://github.com/gauthamr58/Linux-Foundations-to-Mastery/blob/main/images/kernel.webp" alt="Banner" />
+
+* The **kernel is the core part of an operating system (OS)** It acts as a **bridge between hardware and software**, managinh how the applications use computers resources.
+
+You can think of it as the **"brain" or "heart" of the OS.**
+
+---
