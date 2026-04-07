@@ -29,9 +29,7 @@ You can think of it as the **"brain" or "heart" of the OS.**
  1. **Process Management**
       
       *  Creates, Schedules, and terminates processes.
-
       * Decides which process runs on the CPU and for how long.
-
       * Handles inter-process communication .
 
  2. **Memory Management**
