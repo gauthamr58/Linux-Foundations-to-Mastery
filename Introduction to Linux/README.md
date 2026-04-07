@@ -28,17 +28,17 @@ You can think of it as the **"brain" or "heart" of the OS.**
 
  1. **Process Management**
       
-      * The kernel is responsible for creating, executing, and terminating processes (running programs).
+      *  Creates, Schedules, and terminates processes.
 
-      * Scheduling: Since a CPU can only do a few things at once, the kernel uses a     scheduler to decide which process gets to use the CPU and for how long.
+      * Decides which process runs on the CPU and for how long.
 
-      * Inter-Process Communication (IPC): it provides the "pipes" and signals that allow different programs to talk to each other.
+      * Handles inter-process communication .
 
  2. **Memory Management**
 
       * Allocates and deallocates RAM to processes.
       * Keeps processes isolated so they don’t overwrite each other’s memory.
-      * Manages paging, swapping (moving memory to disk if run out of RAM), and the page cache
+      * Manages paging, swapping (moving memory to disk), and the page cache
 
  3. **Device Management**
 
@@ -54,4 +54,5 @@ You can think of it as the **"brain" or "heart" of the OS.**
 
  6. **Networking**
 
-      * manages the entire Network Stack. It handles incoming and outgoing data packets, routing them to the correct application, and managing protocols like TCP/IP and UDP.
+      * Implements the full TCP/IP stack
+      * Manages network interfaces, routing, firewalling .
