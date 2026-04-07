@@ -23,3 +23,35 @@ However..
 You can think of it as the **"brain" or "heart" of the OS.**
 
 ---
+
+## ⚙️ Main Responsibilities of a Kernel
+
+* 1. **Process Management**
+      
+      * The kernel is responsible for creating, executing, and terminating processes (running programs).
+
+      * Scheduling: Since a CPU can only do a few things at once, the kernel uses a     scheduler to decide which process gets to use the CPU and for how long.
+
+      * Inter-Process Communication (IPC): it provides the "pipes" and signals that allow different programs to talk to each other.
+
+* 2. **Memory Management**
+
+      * Allocates and deallocates RAM to processes.
+      * Keeps processes isolated so they don’t overwrite each other’s memory.
+      * Manages paging, swapping (moving memory to disk if run out of RAM), and the page cache
+
+* 3. **Device Management**
+
+      * Provides drivers and handles communication between hardware devices (disk, network, keyboard, etc.) and software.
+
+* 4. **File System Management**
+
+      * Manages files on storage (reading, writing, permissions, directory structure).
+
+* 5. **System Calls / Interface**
+
+      * Provides an API (system calls) for user programs to request services from the OS.
+
+* 6. **Networking**
+
+      * manages the entire Network Stack. It handles incoming and outgoing data packets, routing them to the correct application, and managing protocols like TCP/IP and UDP.
