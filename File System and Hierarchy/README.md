@@ -33,3 +33,42 @@ Linux follows the **Filesystem Hierarchy Standard (FHS)**, which organizes files
 | `/run`           | Runtime transient data (PID files, sockets)              |
 
 ---
+
+## 🌳 Linux Directory Tree Example 🗂️
+
+'''plaintext
+
+/                     
+├── bin              
+├── boot             
+├── dev             
+├── etc              
+├── home             
+│   ├── gautham        
+│   └── user2         
+├── lib              
+├── lib64            
+├── media           
+├── mnt              
+├── opt              
+├── proc            
+├── root             
+├── run              
+├── sbin             
+├── srv              
+├── sys              
+├── tmp              
+├── usr              
+│   ├── bin          
+│   ├── lib          
+│   ├── local        
+│   └── share        
+└── var              
+    ├── log         
+    ├── spool        
+    └── cache        
+
+'''
+
+---
+
