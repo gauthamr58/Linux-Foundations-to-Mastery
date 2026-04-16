@@ -36,7 +36,7 @@ Linux follows the **Filesystem Hierarchy Standard (FHS)**, which organizes files
 
 ## 🌳 Linux Directory Tree Example 🗂️
 
-'''plaintext
+  ```plaintext
 
 /                     
 ├── bin              
@@ -68,7 +68,7 @@ Linux follows the **Filesystem Hierarchy Standard (FHS)**, which organizes files
     ├── spool        
     └── cache        
 
-'''
+```
 
 ---
 
