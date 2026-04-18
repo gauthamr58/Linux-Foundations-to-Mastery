@@ -72,3 +72,10 @@ Linux follows the **Filesystem Hierarchy Standard (FHS)**, which organizes files
 
 ---
 
+
+## 💽 Common Linux Filesystem Types
+
+| File system        | Description                                                |
+| -------------------|----------------------------------------------------------  |
+|   **ext4**         | Default on many distros,large file support,journaling      |
+|   **XFS**          |                                                            |
