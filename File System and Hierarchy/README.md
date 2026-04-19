@@ -1,4 +1,4 @@
-Linux File System
+🧠 Linux Filesystem — Internal Architecture
 =================
 
 ## 📌 What is a Filesystem?
