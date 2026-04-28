@@ -155,3 +155,12 @@ umount /mnt
 df -h      # check mounted filesystems
 lsblk      # list block devices
 ```
+
+# 📌 Key Points to Remember
+
+* Linux has a **single unified directory tree** starting at `/`.
+* **Inodes** store metadata, **data blocks** store content.
+* **Mounting** integrates storage devices into the tree.
+* **Virtual filesystems** like `/proc` and `/sys` provide system info.
+* **Permissions, journaling, and quotas** are part of filesystem management.
+* **FHS** defines where files should logically live.
