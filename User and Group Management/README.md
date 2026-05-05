@@ -93,4 +93,41 @@ It also creates the user’s home directory.
 sudo adduser john
 ```
 
+**Steps shown during execution:**
+
+* Creates user
+* Asks for password
+* Sets user info (name, room, phone, etc.)
+
+---
+
+## 6. ➕ `useradd`
+
+**Purpose:** **Create a user (low-level)** — faster but needs options.
+**Usage:**
+
+```bash
+sudo useradd -m john
+sudo passwd john
+```
+
+* `-m` → creates home directory
+* Needs `passwd` to set a password after creation
+
+**Difference from `adduser`:**
+`adduser` is more user-friendly, `useradd` is more basic and script-friendly.
+
+---
+
+## 7. 🔐 `passwd`
+
+**Purpose:** Sets or changes a user’s password.
+
+**Usage:**
+
+```bash
+passwd            # change own password
+sudo passwd john  # change password of another user
+```
+
  
