@@ -40,6 +40,57 @@ id username # specific user
 **Example Output:**
 
 ```
+uid=1000(ubuntu) gid=1000(ubuntu) groups=1000(ubuntu),4(adm),24(cdrom),27(sudo),30(dip),102(lxd)
+```
 
+---
+
+## 3. 👥 `who`
+
+**Purpose:** Shows **who is logged in to the system** currently.
+
+**Usage:**
+
+```bash
+who
+```
+
+**Example Output:**
+
+```
+user1     tty1         2025-09-11 09:12
+admin    pts/0        2025-09-11 10:01 (192.168.1.5)
+```
+
+---
+
+## 4. 👤 `users`
+
+**Purpose:** Displays a **short list of all currently logged-in users (only usernames)**.
+
+**Usage:**
+
+```bash
+users
+```
+
+**Example Output:**
+
+```
+user admin root
+```
+
+---
+
+## 5. ➕ `adduser`
+
+**Purpose:** Interactively **create a new user** (recommended, user-friendly).
+It also creates the user’s home directory.
+
+**Usage:**
+
+```bash
+sudo adduser john
+```
 
  
