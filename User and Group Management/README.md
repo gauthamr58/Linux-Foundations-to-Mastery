@@ -130,4 +130,44 @@ passwd            # change own password
 sudo passwd john  # change password of another user
 ```
 
+**Extra:** Also can **lock or unlock** an account:
+
+```bash
+sudo passwd -l john   # lock
+sudo passwd -u john   # unlock
+```
+
+---
+
+## 8. 📇 `getent passwd`
+
+**Purpose:** Retrieves **user account info from system databases (like `/etc/passwd` or LDAP)**.
+
+**Usage:**
+
+```bash
+getent passwd john
+```
+
+**Example Output:**
+
+```
+john:x:1001:1001:John Doe,,,:/home/john:/bin/bash
+```
+
+This is better than `cat /etc/passwd` because it also works with network user directories (LDAP, NIS, etc.).
+
+---
+
+## 9. 📁 `cat /etc/passwd`
+
+**Purpose:** Shows **all local user accounts** on the system.
+
+**Usage:**
+
+```bash
+cat /etc/passwd
+```
+
+
  
