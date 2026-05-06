@@ -188,8 +188,8 @@ Linux has **two types of users**:
 
 | Type                     | UID Range                         | Purpose                                                                               |
 | ------------------------ | --------------------------------- | ------------------------------------------------------------------------------------- |
-| **System users**         | 0–999 (or 0–499 on older systems) | Created by the system or packages to run services (e.g. `mysql`, `nginx`, `www-data`) |
-| **Normal (human) users** | 1000+                             | Created manually for real people                                                      |
+| **System users**         | 0–999                             | Created by the system or packages to run services (e.g. `mysql`, `nginx`, `www-data`)   |
+| **Normal (human) users** | 1000+                             | Created manually for real people                                                         |
 
 > `root` always has UID `0`.
 
