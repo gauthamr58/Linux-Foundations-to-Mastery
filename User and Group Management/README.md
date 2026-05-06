@@ -182,4 +182,38 @@ username : x : UID : GID : comment : home directory : login shell
 
 ---
 
+## 👥 Users in Linux
+
+Linux has **two types of users**:
+
+| Type                     | UID Range                         | Purpose                                                                               |
+| ------------------------ | --------------------------------- | ------------------------------------------------------------------------------------- |
+| **System users**         | 0–999 (or 0–499 on older systems) | Created by the system or packages to run services (e.g. `mysql`, `nginx`, `www-data`) |
+| **Normal (human) users** | 1000+                             | Created manually for real people                                                      |
+
+> `root` always has UID `0`.
+
+---
+
+## 📋 How to List All Users
+
+All local user accounts are stored in:
+
+```
+/etc/passwd
+```
+
+**Command:**
+
+```bash
+cat /etc/passwd
+```
+
+Example line:
+
+```
+gautham:x:1002:1002:gauthamr58:/home/gautham:/bin/bash
+```
+
+
  
