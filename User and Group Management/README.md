@@ -168,6 +168,18 @@ This is better than `cat /etc/passwd` because it also works with network user di
 ```bash
 cat /etc/passwd
 ```
+**Example Line:**
 
+```
+gautham:x:1002:1002:,,,:/home/gautham:/bin/bash
+```
+
+**Fields (colon-separated):**
+
+```
+username : x : UID : GID : comment : home directory : login shell
+```
+
+---
 
  
