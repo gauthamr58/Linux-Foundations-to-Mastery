@@ -215,5 +215,42 @@ Example line:
 gautham:x:1002:1002:gauthamr58:/home/gautham:/bin/bash
 ```
 
+---
+
+## 🧮 Filter Based on UID
+
+### 🔹 List all system users (UID < 1000)
+
+```bash
+awk -F: '$3 < 1000 {print $1, $3}' /etc/passwd
+```
+
+Example output:
+
+```
+root 0
+daemon 1
+mysql 113
+nginx 116
+```
+
+---
+
+### 🔹 List all normal (human) users (UID ≥ 1000)
+
+```bash
+awk -F: '$3 >= 1000 {print $1, $3}' /etc/passwd
+```
+
+Example output:
+
+```
+nobody 65534
+ubuntu 1000
+laxu 1001
+gautham 1002
+```
+
+---
 
  
