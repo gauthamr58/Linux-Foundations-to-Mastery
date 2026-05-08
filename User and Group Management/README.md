@@ -265,9 +265,9 @@ This shows all normal users from both local and network databases.
 
 ## 📌 Note 
 
-| User |  Source |
+| Type |  Source |
 |------|------------|
-| Local User | Accounts stored on the machine (/etc/passwd). |
-| LDAP User | create once in LDAP, can login to multiple servers with one account |
-| AD User | Microsoft’s centralized user management system. |
+| Local  | Accounts stored on the machine (/etc/passwd). |
+| LDAP  | central user db server ,create once in LDAP, can login to multiple servers with one account |
+| Active Directory | Microsoft’s centralized user management system. |
  
