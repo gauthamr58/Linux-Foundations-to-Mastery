@@ -253,4 +253,21 @@ gautham 1002
 
 ---
 
+## 💡 Bonus: Using `getent`
+
+If your system uses central authentication (LDAP, NIS, Active Directory), use `getent` instead:
+
+```bash
+getent passwd | awk -F: '$3>=1000 {print $1}'
+```
+
+This shows all normal users from both local and network databases.
+
+## 📌 Note 
+
+| User |  Source |
+|------|------------|
+| Local User | Accounts stored on the machine (/etc/passwd). |
+| LDAP User | create once in LDAP, can login to multiple servers with one account |
+| AD User | Microsoft’s centralized user management system. |
  
