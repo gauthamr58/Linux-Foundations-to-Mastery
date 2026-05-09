@@ -281,3 +281,17 @@ This shows all normal users from both local and network databases.
 * `root` is always `UID 0`
 
 ---
+
+## 10\. ⏳ `chage`
+
+**Purpose:** View or change **password aging policies** for a user (password expiry, last changed date, account expiry). This command is crucial for enforcing security policies.
+
+**Usage:**
+
+```bash
+sudo chage -l [username]       # Lists all password aging info for a user.
+sudo chage -M [days] [username]     # Sets the maximum days between password changes.
+sudo chage -E [YYYY-MM-DD] [username] # Sets the account expiration date.
+sudo chage -W [days] [username]     # Sets the number of warning days before password expires.
+sudo chage -d 0 [username]       # Forces a password change at the next login.
+```
