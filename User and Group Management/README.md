@@ -295,3 +295,13 @@ sudo chage -E [YYYY-MM-DD] [username] # Sets the account expiration date.
 sudo chage -W [days] [username]     # Sets the number of warning days before password expires.
 sudo chage -d 0 [username]       # Forces a password change at the next login.
 ```
+
+**Key Options:**
+
+  * `-l` (or `--list`): Lists the current password aging information.
+  * `-d` (or `--lastday`): Sets the date of the last password change. Setting this to `0` forces a password change.
+  * `-M` (or `--maxdays`): Sets the maximum number of days a password is valid.
+  * `-m` (or `--mindays`): Sets the minimum number of days between password changes.
+  * `-W` (or `--warndays`): Sets the number of days a user receives a warning before their password expires.
+  * `-I` (or `--inactive`): Sets the number of days after password expiration that the account will be locked.
+  * `-E` (or `--expiredate`): Sets the account expiration date.
